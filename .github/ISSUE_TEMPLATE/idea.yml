@@ -1,0 +1,27 @@
+name: Idea
+description: Something you wish AI Tracker did, showed or explained.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like it to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What were you trying to decide or find out?
+      description: The question behind the idea helps me build the right thing.
+  - type: dropdown
+    id: who
+    attributes:
+      label: How do you use AI most?
+      options:
+        - Coding
+        - Writing
+        - Research or study
+        - Work or business tasks
+        - Building AI products
+        - Just curious

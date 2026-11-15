@@ -1,0 +1,27 @@
+name: Data correction
+description: A score, price, date or plan on the site is wrong or out of date.
+title: "[Data] "
+labels: [bug]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or model
+      description: Paste the link from the live site, or name the model or plan.
+      placeholder: https://aitracker-theta.vercel.app/models/...
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What the site shows, and what it should show
+      placeholder: "Shows $3 / $15 per 1M tokens; the provider now lists $2.50 / $10."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source for the correct value
+      description: A link to the provider's page, the benchmark, or the paper.
+    validations:
+      required: true

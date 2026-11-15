@@ -1,0 +1,29 @@
+name: Bug or confusion
+description: Something broke, looked wrong, or you couldn't find what you were after.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Paste the link from the live site.
+      placeholder: https://aitracker-theta.vercel.app/...
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: iPhone Safari, Windows Chrome, ...
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image here.
